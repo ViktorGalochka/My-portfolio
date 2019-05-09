@@ -1,0 +1,450 @@
+body {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000;
+	font-family: 'Open Sans',sans-serif;
+	cursor: pointer;
+	z-index: 5;
+}
+
+.nav {
+	display: flex;
+	width: 100%;
+	text-transform: uppercase;
+}
+
+.burger {
+	display: none;
+	background-color: #000;
+	color: #fff;
+	border: none;
+}
+
+.nav li {
+	margin-left: 40px;
+	transition: all 0.25s ease-in;
+}
+
+.nav li:hover {
+	opacity: 0.4;
+}
+
+.nav-about-me, .nav-portfolio,.contacts {
+	margin: auto;
+}
+
+.language {
+	background-color: #000;
+	color: #fff;
+	border: none;
+	
+}
+
+.language:hover {
+	color: #fff;
+}
+
+.banner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	padding: 0 50px;
+	background: url("../img/banner-2.jpeg");
+}
+
+h1 {
+	margin-top: 150px;
+	font-size: 35px;
+	text-align: center;
+}
+
+p {
+	text-indent: 20px;
+}
+
+.about-me {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 35px;
+}
+
+.about-me h2 {
+	margin-top: 25px;
+	text-align: center;
+	font-size: 25px;
+}
+
+.description {
+	margin-top: 15px;
+}
+
+.tools {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+
+.tools li {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 300px;
+	height: 400px;
+	margin-top: 25px;
+	padding: 5px;
+}
+
+.tools img {
+	width: 100%;
+	max-height: 400px;
+}
+
+.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255,1)); 
+	border-radius: 5px;
+	transition: all 0.4s ease-in;
+}
+
+.border {
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 25px;
+	background: #000;
+}
+
+.banner-2 {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: auto;
+	padding: 50px;
+	background: url("../img/banner-4.jpeg");
+}
+
+.portfolio {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.portfolio ul {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.portfolio li {
+	position: relative;
+	margin: 10px;
+}
+
+.portfolio img {
+	width: 500px;
+	height: auto;
+	border-radius: 5px;
+}
+
+.information {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	bottom: 0px;
+	background: transparent;
+	color: transparent;
+	transition: all 0.4s ease-in;
+}
+
+.information a {
+	display: block;
+	color: transparent;
+	transition: all 0.4s ease-in;
+	text-decoration: none;
+}
+
+.inner-iformation {
+	line-height: 20px;
+	text-indent: 0;
+	text-align: center;
+}
+
+.works li:hover .information {
+	background: rgba(255, 255, 255, 0.8);
+	color: #333;
+}
+
+.works li:hover .mask, .tools li:hover .mask {
+	opacity: 0;
+}
+
+.works li:hover .information a {
+	color: #333;
+	
+}
+
+.information a:hover {
+	text-decoration: underline;
+}
+
+footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 120px;
+	background-color: #000000;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.social {
+	display: flex;
+}
+
+a .fa-facebook-f, a .fa-github, a .fa-linkedin-in {
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	margin-right: 9px;
+	border-radius: 50%;
+	background-color: #f0f0f0;
+	text-align: center;
+	color: #000000;
+	transition: all 0.4s ease-in;
+}
+
+a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
+	background-color: #636363;
+	color: #ffffff;
+	
+}
+
+@media (max-width: 1655px) {
+	.tools {
+		justify-content: center;
+	}
+	
+	.tools li {
+		margin: 5px;
+		margin-top: 15px;
+		width: 250px;
+		height: 350px;
+	}
+	
+	.tools img {
+		max-height: 350px;
+	}
+}
+
+@media (max-width: 1450px) {
+	 p {
+		text-align: center;
+		text-indent: 0;
+	}
+	
+	.tools li {
+		width: 200px;
+		height: 300px;
+	}
+	
+	.tools img {
+		max-height: 300px;
+	}
+}
+
+@media (max-width: 1200px) {
+	.tools li {
+		width: 150px;
+		height: 250px;
+	}
+	
+	.tools img {
+		max-height: 250px;
+	}
+}
+
+@media (max-width: 1140px) {
+	.banner-2 {
+		padding: 15px;
+	}
+}
+
+@media (max-width: 1070px) {
+	.banner-2 {
+		height: auto;;
+	}
+}
+
+@media (max-width: 800px) {
+	.tools li {
+		width: 120px;
+		height: 200px;
+	}
+	
+	.tools img {
+		max-height: 200px;
+	}
+}
+
+@media (max-width: 660px) {
+	.tools li {
+		width: 100px;
+		height: 150px;
+	}
+	
+	.tools img {
+		max-height: 150px;
+	}
+}
+
+@media (max-width: 660px) {
+	.nav {
+		font-size: 14px;
+	}
+	
+	.portfolio img {
+		width: 400px;
+	}
+	
+}
+
+@media (max-width: 600px) {
+
+	footer p {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 500px) {
+	.nav {
+		position: absolute;
+		top: 0;
+		left: 30px;
+	}
+	
+	.burger {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 10px;
+	}
+	
+	.collapse-nav {
+		flex-direction: column;
+		display: none;
+	}
+	
+	.show {
+		display: block;
+	}
+	
+	.collapse-nav li {
+		margin-top: 5px;
+	}
+	
+	.banner {
+		padding: 0px 70px;
+	}
+	
+	.about-me h2 {
+		font-size: 18px;
+	}
+	
+	.description {
+		font-size: 14px;
+	}
+	
+	.tools li {
+		width: 80px;
+		height: 110px;
+	}
+	
+	.tools img {
+		max-height: 110px;
+	}
+	
+	.portfolio img {
+		width: 300px;
+	}
+	
+	.information {
+		height: 100%;
+	}
+	
+	.inner-iformation {
+		font-size: 12px;
+	}
+	
+	footer p {
+		text-align: center;
+	}
+}
+
+@media (max-width: 400px) {
+	.about-me {
+		margin-top: 0px;
+	}
+	
+	.description {
+		margin-top: 10px;
+	}
+	
+	.about-me h2 {
+		margin-top: 10px;
+		font-size: 20px;
+	}
+	
+	.tools li {
+		margin-top: 5px;
+		height: 100px;
+	}
+	
+	.tools img {
+		max-height: 100px;
+	}
+	
+	.portfolio img {
+		width: 250px;
+	}
+	
+	a .fa-facebook-f, a .fa-github, a .fa-linkedin-in {
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		margin-right: 5px;
+	}
+}
+
+@media (max-width: 340px) {
+	
+	.tools li {
+		width: 60px;
+		height: 80px;
+	}
+	
+	.tools img {
+		max-height: 90px;
+	}
+}
