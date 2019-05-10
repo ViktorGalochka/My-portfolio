@@ -171,9 +171,9 @@ p {
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	height: 120px;
+	height: 100%;
 	bottom: 0px;
-	background: transparent;
+	background: -webkit-radial-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255,1)); 
 	color: transparent;
 	transition: all 0.4s ease-in;
 }
@@ -192,11 +192,12 @@ p {
 }
 
 .works li:hover .information {
+	height: 50%;
 	background: rgba(255, 255, 255, 0.8);
 	color: #333;
 }
 
-.works li:hover .mask, .tools li:hover .mask {
+.tools li:hover .mask {
 	opacity: 0;
 }
 
@@ -295,6 +296,21 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 	.banner-2 {
 		height: auto;;
 	}
+
+	.mask-fade {
+		opacity: 0;
+	}
+	
+	.information-show {
+		height: 50%;
+		background: rgba(255, 255, 255, 0.8);
+		color: #333;
+	}
+
+	.information .view-show {
+		color: #333;
+	}
+	
 }
 
 @media (max-width: 800px) {
@@ -389,10 +405,14 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 		width: 300px;
 	}
 	
-	.information {
-		height: 100%;
+	.works li:hover .information {
+		height: 70%;
 	}
-	
+
+	.information-show {
+		height: 70%;
+	}
+
 	.inner-iformation {
 		font-size: 12px;
 	}
@@ -429,6 +449,14 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 		width: 250px;
 	}
 	
+	.works li:hover .information {
+		height: 100%;
+	}
+
+	.information-show {
+		height: 100%;
+	}
+
 	a .fa-facebook-f, a .fa-github, a .fa-linkedin-in {
 		width: 30px;
 		height: 30px;

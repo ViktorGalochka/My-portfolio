@@ -115,3 +115,25 @@ let burger = document.querySelector(".burger");
 burger.addEventListener("click", function() {
     document.querySelector(".collapse-nav").classList.toggle("show");
 })
+
+let masks = document.querySelectorAll(".tools .mask");
+let informations = document.querySelectorAll(".information")
+
+for(let i = 0; i < masks.length; i++) {
+    masks[i].addEventListener("click", function() {
+    this.classList.toggle("mask-fade");
+    let information = this.nextElementSibling;
+    information.classList.toggle("information-show");
+   })
+    
+}
+
+for(let i = 0; i < informations.length; i++) {
+    informations[i].addEventListener("click", function() {
+    this.classList.toggle("information-show");
+    console.log(informations);
+    let link = this.firstElementChild;
+    link.classList.toggle("view-show");
+   })
+    
+}
