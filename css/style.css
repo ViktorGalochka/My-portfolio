@@ -185,6 +185,20 @@ p {
 	text-decoration: none;
 }
 
+.mask-fade {
+	opacity: 0;
+}
+
+.information-show {
+	height: 50%;
+	background: rgba(255, 255, 255, 0.8);
+	color: #333;
+}
+
+.information .view-show {
+	color: #333;
+}
+
 .inner-iformation {
 	line-height: 20px;
 	text-indent: 0;
@@ -192,18 +206,11 @@ p {
 }
 
 .works li:hover .information {
-	height: 50%;
-	background: rgba(255, 255, 255, 0.8);
-	color: #333;
+	cursor: pointer;
 }
 
 .tools li:hover .mask {
-	opacity: 0;
-}
-
-.works li:hover .information a {
-	color: #333;
-	
+	cursor: pointer;
 }
 
 .information a:hover {
@@ -296,21 +303,6 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 	.banner-2 {
 		height: auto;;
 	}
-
-	.mask-fade {
-		opacity: 0;
-	}
-	
-	.information-show {
-		height: 50%;
-		background: rgba(255, 255, 255, 0.8);
-		color: #333;
-	}
-
-	.information .view-show {
-		color: #333;
-	}
-	
 }
 
 @media (max-width: 800px) {
@@ -405,10 +397,6 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 		width: 300px;
 	}
 	
-	.works li:hover .information {
-		height: 70%;
-	}
-
 	.information-show {
 		height: 70%;
 	}
@@ -449,10 +437,6 @@ a .fa-facebook-f:hover, a .fa-github:hover, a .fa-linkedin-in:hover {
 		width: 250px;
 	}
 	
-	.works li:hover .information {
-		height: 100%;
-	}
-
 	.information-show {
 		height: 100%;
 	}
