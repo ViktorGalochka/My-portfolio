@@ -80,7 +80,8 @@ language.addEventListener("click", function() {
         portfolioAnch.textContent = "Портфолио";
         contactAnch.textContent = "Контакты";
         name.textContent = "Виктор Галочка";
-        aboutMyself.textContent = "Начинающий Front-End разработчик. Опыт в написании кода составлялет пол года, опыта работы в коммерческом проекте еще нет, но есть огромное желание развиваться в направлении Front-end разработки.";
+        aboutMyself.textContent = "Я Front End разработчик с 9 месяцами опыта в программировании + (1 месяц опыта
+в коммерческих проектах)";
         myTools.textContent = "В ходе разработки использую";
         myWorks.textContent = "Мои работы";
         function translateViews() {
@@ -96,7 +97,8 @@ language.addEventListener("click", function() {
         portfolioAnch.textContent = "Portfolio";
         contactAnch.textContent = "Contact";
         name.textContent = "Viktor Galochka";
-        aboutMyself.textContent = "I am beginning Front-End Developer. Experience in writing code is half a year, experience in a commercial project is not yet, but I have a huge desire to develop my skills in the Front-end development.";
+        aboutMyself.textContent = "I am a Front End developer with 9 months of experience in programming + (1 month of experience
+in commercial projects)";
         myTools.textContent = "Use these tools";
         myWorks.textContent = "My works";
         function translateViews() {
